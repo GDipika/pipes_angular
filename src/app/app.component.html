@@ -15,15 +15,16 @@
       <th>{{ user.name | uppercase }}</th>
       <th>{{ user.place | lowercase }}</th>
       <th>{{ user.dob | date }}</th>
-      <th>{{user.dob | date:'MM/dd/yyyy'}}</th>
+      <th>{{ user.dob | date : "MM/dd/yyyy" }}</th>
       <th>{{ user.dob | custom }}</th>
-      <th>{{ user.name | slice:3:5 }}</th>
+      <th>{{ user.name | slice : 3 : 5 }}</th>
     </tr>
   </table>
-   <h3>To convert value to uppercase </h3>
- <p> {{value | uppercase}}</p>
- <h1>Price in Us Dollars</h1>
-    <p>Price in US Dollars: {{ priceInRupees | rupeesToCurrency: 74.5 }}</p>
-    <h1>Price in Euro Dollars</h1>
-    <p>Price in Euro : {{ priceInRupees | rupeesToCurrency: 88.5 }}</p>
+  <h3>To convert value to uppercase</h3>
+  <p>{{ value | uppercase }}</p>
+  <h1>Price in Us Dollars</h1>
+  <p>Price in US Dollars: {{ priceInRupees | rupeesToCurrency : 74.5 }}</p>
+  <h1>Price in Euro Dollars</h1>
+  <p>Price in Euro : {{ priceInRupees | rupeesToCurrency : 88.5 }}</p>
+  <p>Titlecase:{{value |titlecase}}</p>
 </div>

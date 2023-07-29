@@ -9,6 +9,7 @@ import { RupeetocurrencyPipe } from './rupeetocurrency.pipe';
 import { CurrencyPipe } from './currency.pipe';
 import { RupeesToCurrencyPipe } from './currencytodollar.pipe';
 import { CurrencytoeuroPipe } from './currencytoeuro.pipe';
+import { TitlecasePipe } from './titlecase.pipe';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CurrencytoeuroPipe } from './currencytoeuro.pipe';
   CurrencyPipe,
   RupeetocurrencyPipe,
   RupeesToCurrencyPipe,
-  CurrencytoeuroPipe
+  CurrencytoeuroPipe,
+  TitlecasePipe
   ],
   imports: [
     BrowserModule
